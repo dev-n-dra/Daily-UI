@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+@font-face {
+    font-family: "+JakartaRegular";
+    src: url(./fonts/PlusJakartaSans-Regular.woff2);
+}
+
+@font-face {
+    font-family: "+JakartaMedium";
+    src: url(./fonts/PlusJakartaSans-Medium.woff2);
+}
+
+@font-face {
+    font-family: "+JakartaBold";
+    src: url(./fonts/PlusJakartaSans-Bold.woff2);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "+JakartaRegular", sans-serif;
+    font-size: clamp(1.125rem, 4.5vw, 1.5rem);
+    letter-spacing: 0.02em;
+}
+
+
+/* Typography----------------------------------- */
+
+h1 {
+    font-family: "+JakartaBold", sans-serif;
+    font-size: clamp(2.25rem, 8vw, 4.5rem);
+    letter-spacing: 0.03em;
+}
+
+h3 {
+    font-family: "+JakartaMedium", sans-serif;
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
+    letter-spacing: 0.03em;
+}
+
+.num {
+    font-family: "Limelight", "+JakartaBold", sans-serif;
+    font-size: clamp(7.5rem, 30vw, 22.5rem);
+    line-height: 100%;
+}
+
+button {
+    font-family: "+JakartaBold", sans-serif;
+    font-size: clamp(1rem, 8vw, 1.125rem);
+    letter-spacing: 0.02em;
+}
+
+.accent {
+    color: #ff8552;
+}
+
+
+/* layout-------------------------------------------------------- */
+
+
+/* hero section---------------------- */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.hero {
+    background: #ffe0b5;
+    color: #0d5c63;
+    padding: 5rem 0;
+}
+
+.hero h1 {
+    text-transform: uppercase;
+    margin: 1rem 0;
+}
+
+.hero p {
+    width: 80%;
+}
+
+
+/* odd section------------------------ */
+
+.odd {
+    background: #0d5c63;
+    color: #ffe0b5;
+    padding: 2em 0;
+}
+
+.odd h1 {
+    text-transform: capitalize;
+}
+
+.odd p {
+    margin: 1rem 0;
+}
+
+.odd .num {
+    text-align: right;
+}
+
+button {
+    border: none;
+    border-radius: 10px;
+    background-color: #ff8552;
+    color: #0d5c63;
+    text-transform: uppercase;
+    padding: 0.75em 1.5em;
+}
