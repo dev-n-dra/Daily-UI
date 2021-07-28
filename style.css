@@ -48,7 +48,7 @@ h3 {
 .num {
     font-family: "Limelight", "+JakartaBold", sans-serif;
     font-size: clamp(7.5rem, 30vw, 22.5rem);
-    line-height: 100%;
+    /* line-height: 100%; */
 }
 
 button {
@@ -97,6 +97,11 @@ button {
     padding: 2em 0;
 }
 
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
 .odd h1 {
     text-transform: capitalize;
 }
@@ -116,4 +121,75 @@ button {
     color: #0d5c63;
     text-transform: uppercase;
     padding: 0.75em 1.5em;
+}
+
+
+/* media queries for odd section-------------- */
+
+@media (min-width: 800px) {
+    .flex {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 50px;
+    }
+    .odd .num {
+        margin-top: 0.15em;
+        text-align: left;
+    }
+}
+
+
+/* even section------------------------ */
+
+.even {
+    background: #ffe0b5;
+    color: #0d5c63;
+    padding: 2em 0;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.even h1 {
+    text-transform: capitalize;
+    text-align: right;
+}
+
+.even p {
+    margin: 1rem 0;
+    text-align: right;
+}
+
+.even .num {
+    text-align: left;
+}
+
+button {
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff8552;
+    color: #0d5c63;
+    text-transform: uppercase;
+    padding: 0.75em 1.5em;
+}
+
+
+/* media queries for even section-------------- */
+
+@media (min-width: 800px) {
+    .flex {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 50px;
+    }
+    .even.content {
+        order: 1;
+    }
+    .even .num {
+        margin-top: 0.15em;
+        order: 2;
+    }
 }
