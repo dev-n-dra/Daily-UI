@@ -16,7 +16,7 @@ html {
 body {
     font-family: "+JakartaRegular", sans-serif;
     font-size: clamp(1.125rem, 4.5vw, 1.5rem);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.05em;
 }
 
 h1 {
@@ -88,6 +88,11 @@ a {
     &:hover {
         background-color: transparent;
         color: $colors-accent;
+        transition: ease-out 200ms;
+    }
+    &:active {
+        background-color: $colors-accent;
+        color: $colors-dark;
         transition: ease-out 200ms;
     }
 }
