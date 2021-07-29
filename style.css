@@ -51,18 +51,34 @@ h3 {
     /* line-height: 100%; */
 }
 
-button {
-    font-family: "+JakartaBold", sans-serif;
-    font-size: clamp(1rem, 8vw, 1.125rem);
-    letter-spacing: 0.02em;
-}
-
 .accent {
     color: #ff8552;
 }
 
 
 /* layout-------------------------------------------------------- */
+
+a {
+    color: #0d5c63;
+    text-decoration: none;
+    padding: 0.5em 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    font-family: "+JakartaBold", sans-serif;
+    font-size: clamp(1rem, 8vw, 1.125rem);
+    letter-spacing: 0.02em;
+    background-color: #ff8552;
+    display: inline;
+    padding: 0.75em 1.5em;
+    border-radius: 10px;
+    align-self: flex-end;
+}
 
 
 /* hero section---------------------- */
@@ -102,6 +118,10 @@ button {
     flex-direction: column;
 }
 
+.odd .content {
+    align-items: flex-start;
+}
+
 .odd h1 {
     text-transform: capitalize;
 }
@@ -114,13 +134,8 @@ button {
     text-align: right;
 }
 
-button {
-    border: none;
-    border-radius: 10px;
-    background-color: #ff8552;
-    color: #0d5c63;
-    text-transform: uppercase;
-    padding: 0.75em 1.5em;
+.button {
+    text-align: left;
 }
 
 
@@ -152,6 +167,10 @@ button {
     flex-direction: column;
 }
 
+.even .content {
+    align-items: flex-end;
+}
+
 .even h1 {
     text-transform: capitalize;
     text-align: right;
@@ -164,16 +183,6 @@ button {
 
 .even .num {
     text-align: left;
-}
-
-button {
-    text-align: right;
-    border: none;
-    border-radius: 10px;
-    background-color: #ff8552;
-    color: #0d5c63;
-    text-transform: uppercase;
-    padding: 0.75em 1.5em;
 }
 
 
