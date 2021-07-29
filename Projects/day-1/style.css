@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Ubuntu:wght@400;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: clamp(1.125rem, 4.5vw, 1.5rem);
+  font-weight: 400;
+  color: #ffffff;
+}
+
+h1 {
+  font-size: clamp(2.25rem, 9vw, 4.5rem);
+  font-weight: 700;
+  font-family: 'Ubuntu', sans-serif;
+  color: #C3E0FC;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: clamp(1.125rem, 4.5vw, 1.5rem);
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  font-size: clamp(0.875rem, 3.5vw, 1.125rem);
+  font-weight: 400;
+}
+
+button {
+  font-size: clamp(0.875rem, 3.5vw, 1.125rem);
+  font-weight: 500;
+}
+
+.small {
+  font-size: clamp(0.75rem, 3vw, 0.875rem);
+  color: #222823;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0.25rem;
+  text-transform: capitalize;
+}
+
+body {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #222823), color-stop(70%, #ffffff));
+  background: linear-gradient(to bottom, #222823 70%, #ffffff 70% 100%);
+}
+
+.container {
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .content {
+  padding-bottom: 1.5em;
+  max-width: 480px;
+}
+
+.container .form {
+  max-width: 480px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  background-color: #C3E0FC;
+  color: #222823;
+  border-radius: 1rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0 4px 10px rgba(34, 40, 35, 0.5);
+          box-shadow: 0 4px 10px rgba(34, 40, 35, 0.5);
+}
+
+.container .form label {
+  text-transform: capitalize;
+}
+
+.container .form input {
+  height: 30px;
+  border: solid 2px rgba(34, 40, 35, 0.25);
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+  padding: 1em;
+}
+
+.container .form input:focus {
+  outline: none;
+  border: solid 2px rgba(34, 40, 35, 0.8);
+}
+
+.container .form button {
+  height: 35px;
+  border: solid 2px #222823;
+  border-radius: 0.5rem;
+  background-color: #222823;
+  color: #C3E0FC;
+  margin: 0.5em 0;
+  -webkit-transition: ease-in 200ms;
+  transition: ease-in 200ms;
+  cursor: pointer;
+}
+
+.container .form button:hover, .container .form button:focus {
+  outline: none;
+  background-color: #C3E0FC;
+  color: #222823;
+  -webkit-transition: ease-in 200ms;
+  transition: ease-in 200ms;
+}
+
+.container .form button:active {
+  background-color: #222823;
+  color: #C3E0FC;
+  -webkit-transition: ease-in 100ms;
+  transition: ease-in 100ms;
+}
+
+.container .form .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .form .social-links .social {
+  width: 40px;
+  aspect-ratio: 1/1;
+  background-color: #ffffff;
+  margin: 0.5rem 0.5rem 0;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  border-radius: .5rem;
+  -webkit-box-shadow: 0 2px 4px rgba(34, 40, 35, 0.25);
+          box-shadow: 0 2px 4px rgba(34, 40, 35, 0.25);
+  cursor: pointer;
+  -webkit-transition: ease-out 500ms;
+  transition: ease-out 500ms;
+}
+
+.container .form .social-links .social svg {
+  fill: #222823;
+}
+
+.container .form .social-links .social:hover {
+  background-color: #222823;
+  -webkit-transition: ease-out 500ms;
+  transition: ease-out 500ms;
+}
+
+.container .form .social-links .social:hover svg {
+  fill: #ffffff;
+}
+
+@media (min-width: 1000px) {
+  body {
+    min-height: 100vh;
+    background: -webkit-gradient(linear, left top, right top, color-stop(75%, #222823), color-stop(75%, #ffffff));
+    background: linear-gradient(to right, #222823 75%, #ffffff 75% 100%);
+  }
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 3rem;
+            column-gap: 3rem;
+  }
+  .container .form {
+    -webkit-box-shadow: 4px 0 10px rgba(34, 40, 35, 0.5);
+            box-shadow: 4px 0 10px rgba(34, 40, 35, 0.5);
+  }
+}
+/*# sourceMappingURL=style.css.map */
