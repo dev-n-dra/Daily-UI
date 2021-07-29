@@ -107,6 +107,16 @@ a {
   border-radius: 10px;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-transition: ease-out 500ms;
+  transition: ease-out 500ms;
+  border: solid 2px #ff8552;
+}
+
+.button:hover {
+  background-color: transparent;
+  color: #ff8552;
+  -webkit-transition: ease-out 200ms;
+  transition: ease-out 200ms;
 }
 
 .hero {

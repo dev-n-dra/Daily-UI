@@ -83,6 +83,13 @@ a {
     padding: 0.75em 1.5em;
     border-radius: 10px;
     align-self: flex-end;
+    transition: ease-out 500ms;
+    border: solid 2px $colors-accent;
+    &:hover {
+        background-color: transparent;
+        color: $colors-accent;
+        transition: ease-out 200ms;
+    }
 }
 
 // hero section styles------------
