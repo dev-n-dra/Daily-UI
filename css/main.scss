@@ -1,0 +1,145 @@
+@import "./fonts";
+$color-light:#ffe0b5;
+$colors-dark:#0d5c63;
+$colors-accent:#ff8552;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// typography-------------------------
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "+JakartaRegular", sans-serif;
+    font-size: clamp(1.125rem, 4.5vw, 1.5rem);
+    letter-spacing: 0.02em;
+}
+
+h1 {
+    font-family: "+JakartaBold", sans-serif;
+    font-size: clamp(2.25rem, 8vw, 4.5rem);
+    letter-spacing: 0.03em;
+}
+
+h3 {
+    font-family: "+JakartaMedium", sans-serif;
+    font-size: clamp(1.5rem, 6vw, 2.25rem);
+    letter-spacing: 0.03em;
+}
+
+.num {
+    font-family: "Limelight", "+JakartaBold", sans-serif;
+    font-size: clamp(7.5rem, 30vw, 22.5rem);
+    /* line-height: 100%; */
+}
+
+.accent {
+    color: $colors-accent;
+    font-weight: bold;
+}
+
+a {
+    color: $colors-dark;
+    text-decoration: none;
+    padding: 0.5em 0;
+}
+
+.button {
+    font-family: "+JakartaBold", sans-serif;
+    font-size: clamp(1rem, 8vw, 1.125rem);
+    letter-spacing: 0.02em;
+}
+
+// layout---------------------------------------------
+.content {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        text-transform: capitalize;
+    }
+    p {
+        margin: 1rem 0;
+    }
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    background-color: $colors-accent;
+    display: inline;
+    padding: 0.75em 1.5em;
+    border-radius: 10px;
+    align-self: flex-end;
+}
+
+// hero section styles------------
+.hero {
+    background: $color-light;
+    color: $colors-dark;
+    padding: 5rem 0;
+    h1 {
+        text-transform: uppercase;
+        margin: 1rem 0;
+    }
+    p {
+        width: 90%;
+    }
+}
+
+//  odd sections style------------
+.odd {
+    background: $colors-dark;
+    color: $color-light;
+    padding: 2em 0;
+    .num {
+        text-align: right;
+    }
+    .content {
+        align-items: flex-start;
+    }
+    // .button {
+    //     text-align: left;
+    // }
+}
+
+// even section style------------
+.even {
+    background: $color-light;
+    color: $colors-dark;
+    padding: 2em 0;
+    .num {
+        text-align: left;
+    }
+    .content {
+        align-items: flex-end;
+    }
+    h1,
+    p {
+        text-align: right;
+    }
+}
+
+// footer styling
+footer {
+    background: $colors-dark;
+    color: $color-light;
+    padding: 2em 0;
+    p {
+        margin: 0.5em 0;
+    }
+}
+
+@import "./responsive"

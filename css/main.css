@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+@font-face {
+  font-family: "+JakartaRegular";
+  src: url(../fonts/PlusJakartaSans-Regular.woff2);
+}
+
+@font-face {
+  font-family: "+JakartaMedium";
+  src: url(../fonts/PlusJakartaSans-Medium.woff2);
+}
+
+@font-face {
+  font-family: "+JakartaBold";
+  src: url(../fonts/PlusJakartaSans-Bold.woff2);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "+JakartaRegular", sans-serif;
+  font-size: clamp(1.125rem, 4.5vw, 1.5rem);
+  letter-spacing: 0.02em;
+}
+
+h1 {
+  font-family: "+JakartaBold", sans-serif;
+  font-size: clamp(2.25rem, 8vw, 4.5rem);
+  letter-spacing: 0.03em;
+}
+
+h3 {
+  font-family: "+JakartaMedium", sans-serif;
+  font-size: clamp(1.5rem, 6vw, 2.25rem);
+  letter-spacing: 0.03em;
+}
+
+.num {
+  font-family: "Limelight", "+JakartaBold", sans-serif;
+  font-size: clamp(7.5rem, 30vw, 22.5rem);
+  /* line-height: 100%; */
+}
+
+.accent {
+  color: #ff8552;
+  font-weight: bold;
+}
+
+a {
+  color: #0d5c63;
+  text-decoration: none;
+  padding: 0.5em 0;
+}
+
+.button {
+  font-family: "+JakartaBold", sans-serif;
+  font-size: clamp(1rem, 8vw, 1.125rem);
+  letter-spacing: 0.02em;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content h1 {
+  text-transform: capitalize;
+}
+
+.content p {
+  margin: 1rem 0;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.button {
+  background-color: #ff8552;
+  display: inline;
+  padding: 0.75em 1.5em;
+  border-radius: 10px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.hero {
+  background: #ffe0b5;
+  color: #0d5c63;
+  padding: 5rem 0;
+}
+
+.hero h1 {
+  text-transform: uppercase;
+  margin: 1rem 0;
+}
+
+.hero p {
+  width: 90%;
+}
+
+.odd {
+  background: #0d5c63;
+  color: #ffe0b5;
+  padding: 2em 0;
+}
+
+.odd .num {
+  text-align: right;
+}
+
+.odd .content {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.even {
+  background: #ffe0b5;
+  color: #0d5c63;
+  padding: 2em 0;
+}
+
+.even .num {
+  text-align: left;
+}
+
+.even .content {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.even h1,
+.even p {
+  text-align: right;
+}
+
+footer {
+  background: #0d5c63;
+  color: #ffe0b5;
+  padding: 2em 0;
+}
+
+footer p {
+  margin: 0.5em 0;
+}
+
+@media (min-width: 800px) {
+  .flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-column-gap: 50px;
+            column-gap: 50px;
+  }
+  .odd .num {
+    margin-top: 0.15em;
+    text-align: left;
+  }
+  .even .content {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .even .num {
+    margin-top: 0.15em;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+/*# sourceMappingURL=main.css.map */

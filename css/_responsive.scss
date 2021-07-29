@@ -1,0 +1,22 @@
+@media (min-width:800px) {
+    .flex {
+        flex-direction: row;
+        align-items: center;
+        column-gap: 50px;
+    }
+    .odd {
+        .num {
+            margin-top: 0.15em;
+            text-align: left;
+        }
+    }
+    .even {
+        .content {
+            order: 1;
+        }
+        .num {
+            margin-top: 0.15em;
+            order: 2;
+        }
+    }
+}

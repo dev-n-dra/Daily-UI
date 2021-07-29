@@ -1,5 +1,6 @@
 //javascript
 const main = document.querySelector('main')
+const footer = document.querySelector('footer')
 
 arr = [{
     day: 01,
@@ -59,3 +60,11 @@ arr.forEach(element => {
 });
 
 main.innerHTML += renderString
+
+if (arr.length % 2 == 0) {
+    footer.style.background = '#0d5c63'
+    footer.style.color = '#0ffe0b5'
+} else {
+    footer.style.background = '#ffe0b5'
+    footer.style.color = '#0d5c63'
+}
