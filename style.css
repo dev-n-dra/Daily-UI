@@ -202,3 +202,16 @@ a {
         order: 2;
     }
 }
+
+
+/* footer------------------------------------- */
+
+footer {
+    background: #0d5c63;
+    color: #ffe0b5;
+    padding: 2em 0;
+}
+
+footer p {
+    margin: 0.5em 0;
+}
