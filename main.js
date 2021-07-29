@@ -1,31 +1,61 @@
-< !DOCTYPE html >
-    <
-    html lang = "en" >
+//javascript
+const main = document.querySelector('main')
 
-    <
-    head >
-    <
-    meta charset = "UTF-8" / >
-    <
-    meta http - equiv = "X-UA-Compatible"
-content = "IE=edge" / >
-    <
-    meta name = "viewport"
-content = "width=device-width, initial-scale=1.0" / >
-    <
-    title > Daily UI Design & Development < /title> <
-    link rel = "stylesheet"
-href = "style.css" / >
-    <
-    /head>
+arr = [{
+    day: 01,
+    title: 'sign up',
+    body: 'Vel augue aliquam vitae enim eu morbi iaculis.Faucibus diam tempor,verra nunc.Velit at eros,amet elit.Nunc id vitae,erat posuer diam tempor,viverra nunc.',
+    link: '#'
+}, {
+    day: 02,
+    title: 'credit card checkout',
+    body: 'Vel augue aliquam vitae enim eu morbi iaculis.Faucibus diam tempor,verra nunc.Velit at eros,amet elit.Nunc id vitae,erat posuer diam tempor,viverra nunc.',
+    link: '#'
+}]
 
-<
-body >
-    <
-    h3 > Hey! < /h3> <
-    h3 > I 'm Devendra Patidar</h3> <
-    script src = "main.js" > < /script> <
-    /body>
+console.log(arr)
 
-<
-/html>
+let renderString = ''
+arr.forEach(element => {
+    let day = element.day
+    if (day < 10) {
+        day = `0${element.day}`
+    }
+    if (element.day % 2 === 0) {
+        renderString += `
+        <section class="even">
+            <div class="container">
+                <div class="flex">
+                    <div class="num">${day}</div>
+                    <div class="content">
+                        <h1 class="accent">${element.title}</h1>
+                        <p>${element.body}</p>
+                        <a href="${element.link}">
+                            <div class="button">Visit project</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `
+    } else {
+        renderString += `
+        <section class="odd">
+            <div class="container">
+                <div class="flex">
+                    <div class="num">${day}</div>
+                    <div class="content">
+                        <h1 class="accent">${element.title}</h1>
+                        <p>${element.body}</p>
+                        <a href="${element.link}">
+                            <div class="button">Visit project</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    `
+    }
+});
+
+main.innerHTML += renderString
