@@ -6,7 +6,7 @@ arr = [{
     day: 01,
     title: 'sign up',
     body: 'Vel augue aliquam vitae enim eu morbi iaculis.Faucibus diam tempor,verra nunc.Velit at eros,amet elit.Nunc id vitae,erat posuer diam tempor,viverra nunc.',
-    link: '../Projects/day-1/index.html'
+    link: '/Projects/day-1/index.html'
 }]
 
 console.log(arr)
