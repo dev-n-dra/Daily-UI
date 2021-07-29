@@ -77,7 +77,6 @@ body {
 
 .container .form {
   max-width: 480px;
-  width: 100%;
   display: -ms-grid;
   display: grid;
   background-color: #C3E0FC;
@@ -188,6 +187,7 @@ body {
   .container .form {
     -webkit-box-shadow: 4px 0 10px rgba(34, 40, 35, 0.5);
             box-shadow: 4px 0 10px rgba(34, 40, 35, 0.5);
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
