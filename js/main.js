@@ -5,7 +5,7 @@ const footer = document.querySelector('footer')
 arr = [{
     day: 01,
     title: 'sign up',
-    body: 'Vel augue aliquam vitae enim eu morbi iaculis.Faucibus diam tempor,verra nunc.Velit at eros,amet elit.Nunc id vitae,erat posuer diam tempor,viverra nunc.',
+    body: 'The challenge is to Design and Develop a signup page. And when it comes to forms, the most crucial thing is Accessibility. So to make this page accessible, I used the custom focus state and chose the colors with good contrast.',
     link: 'Projects/day-1/index.html'
 }]
 
