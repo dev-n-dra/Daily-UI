@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Ubuntu:wght@400;500&display=swap');
+$color-light:#C3E0FC;
+$color-dark:#222823;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+// typography------------------------
+html {
+    font-size: 16px;
+}
+
+body {
+    color: #ffffff;
+    font-family: 'ubuntu', sans-serif;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 2.25rem);
+    font-weight: 400;
+}
+
+h2 {
+    font-size: clamp(1.125rem, 4vw, 1.5rem);
+    font-weight: 400;
+}
+
+p,
+label,
+button {
+    font-size: clamp(0.875rem, 3vw, 1.125rem);
+    margin-bottom: 0.5em;
+}
+
+.small {
+    font-size: clamp(0.375rem, 2vw, 0.5rem);
+}
+
+// layout------------------------
+body {
+    background: linear-gradient(#414141, #000000);
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 2em 1.5em;
+    .credit-card {
+        width: 100%;
+        aspect-ratio: 17/10;
+        font-family: 'Courier Prime', monospace;
+        text-transform: uppercase;
+        color: #222823;
+        border: solid 1px #D2CCC4;
+        background: linear-gradient(135deg, #D2CCC4, #2F4353);
+        padding: 1.5em;
+        margin: 1em 0 1.5em;
+        border-radius: 1.5em;
+        h1 {
+            font-size: clamp(1.5rem, 6vw, 2rem);
+            margin: 2em 0 1.5em;
+        }
+        position: relative;
+        .logo {
+            position: absolute;
+            bottom: 1.5em;
+            right: 1.5em;
+            display: flex;
+            .light {
+                width: clamp(1.5rem, 7vw, 2.25rem);
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                background-color: #D2CCC4;
+                border: solid 1px #222823;
+                position: relative;
+                left: 25%;
+            }
+            .dark {
+                width: clamp(1.5rem, 7vw, 2.25rem);
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                border: solid 1px #D2CCC4;
+                background-color: #222823;
+                z-index: 2;
+            }
+        }
+    }
+    .form {
+        display: grid;
+        padding: 1.5em;
+        background: #D2CCC4;
+        border: solid 1px #ffffff;
+        border-radius: 1.5em;
+        color: #222823;
+        text-transform: capitalize;
+        .half {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 2em;
+        }
+        input {
+            width: 100%;
+            font-family: 'ubuntu', sans-serif;
+            font-weight: 500;
+            height: 35px;
+            border: solid 2px rgba($color: #222823, $alpha: 0.5);
+            border-radius: 10px;
+            margin-bottom: 1em;
+            padding: 1em;
+            &:focus {
+                outline: none;
+                border: solid 2px rgba($color: #222823, $alpha: 1);
+            }
+        }
+        button {
+            cursor: pointer;
+            width: 100%;
+            background: #222823;
+            color: #D2CCC4;
+            font-family: 'ubuntu', sans-serif;
+            font-weight: 500;
+            text-transform: capitalize;
+            height: 40px;
+            border: solid 2px rgba($color: #222823, $alpha: 1);
+            border-radius: 10px;
+            margin-top: 0.5em;
+            transition: all 300ms;
+            &:hover {
+                transition: all 300ms;
+                background: transparent;
+                color: #222823;
+            }
+        }
+    }
+}

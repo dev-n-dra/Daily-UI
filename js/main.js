@@ -7,6 +7,11 @@ arr = [{
     title: 'sign up',
     body: 'The challenge is to Design and Develop a signup page. And when it comes to forms, the most crucial thing is Accessibility. So to make this page accessible, I used the custom focus state and chose the colors with good contrast.',
     link: 'Projects/day-1/index.html'
+}, {
+    day: 02,
+    title: 'credit card checkout',
+    body: 'The challenge is to Design and Develop the credit card checkout page. And when it comes to forms, the most crucial thing is Accessibility. So to make this page accessible, I used the custom focus state and chose the colors with good contrast.',
+    link: 'Projects/day-2/index.html'
 }]
 
 console.log(arr)
