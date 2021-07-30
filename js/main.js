@@ -10,7 +10,7 @@ arr = [{
 }, {
     day: 02,
     title: 'credit card checkout',
-    body: 'The challenge is to Design and Develop the credit card checkout page. And when it comes to forms, the most crucial thing is Accessibility. So to make this page accessible, I used the custom focus state and chose the colors with good contrast.',
+    body: 'The challenge is to Design and Develop the credit card checkout page. I used the gradients to look the UI of the page appealing and the use of monospace font makes the card look real.',
     link: 'Projects/day-2/index.html'
 }]
 
