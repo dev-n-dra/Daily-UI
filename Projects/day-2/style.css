@@ -118,7 +118,6 @@ body {
 .container .form input {
   width: 100%;
   font-family: 'ubuntu', sans-serif;
-  font-weight: 500;
   height: 35px;
   border: solid 2px rgba(34, 40, 35, 0.5);
   border-radius: 10px;
